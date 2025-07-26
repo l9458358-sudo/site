@@ -4,50 +4,86 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Affordable Care Enrollment</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header class="hero">
-        <h1>Affordable Care Enrollment</h1>
-        <p>Your health coverage starts here.</p>
-        <a href="#enroll" class="cta-btn">Enroll Now</a>
+    <header class="hero text-center text-white py-5">
+        <div class="container">
+            <h1 class="display-4 mb-3">Affordable Care Enrollment</h1>
+            <p class="lead mb-4">Your health coverage starts here.</p>
+            <a href="#enroll" class="btn btn-warning btn-lg">Enroll Now</a>
+        </div>
     </header>
 
-    <section class="features">
-        <h2>Why Choose Us?</h2>
-        <div class="feature-list">
-            <div class="feature">
-                <h3>Comprehensive Plans</h3>
-                <p>We offer a range of plans to fit your needs and budget.</p>
-            </div>
-            <div class="feature">
-                <h3>Trusted Providers</h3>
-                <p>Access a nationwide network of healthcare professionals.</p>
-            </div>
-            <div class="feature">
-                <h3>Simple Enrollment</h3>
-                <p>Our quick application process gets you covered fast.</p>
+    <section class="features py-5 bg-light text-center">
+        <div class="container">
+            <h2 class="mb-4">Why Choose Us?</h2>
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="card h-100 shadow-sm">
+                        <div class="card-body">
+                            <span class="material-icons feature-icon text-primary mb-3">local_hospital</span>
+                            <h3 class="h5">Comprehensive Plans</h3>
+                            <p>We offer a range of plans to fit your needs and budget.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card h-100 shadow-sm">
+                        <div class="card-body">
+                            <span class="material-icons feature-icon text-primary mb-3">verified_user</span>
+                            <h3 class="h5">Trusted Providers</h3>
+                            <p>Access a nationwide network of healthcare professionals.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card h-100 shadow-sm">
+                        <div class="card-body">
+                            <span class="material-icons feature-icon text-primary mb-3">assignment_turned_in</span>
+                            <h3 class="h5">Simple Enrollment</h3>
+                            <p>Our quick application process gets you covered fast.</p>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
 
-    <section id="enroll" class="enroll-section">
-        <h2>Enrollment Form</h2>
-        <form id="enroll-form">
-            <label for="name">Name</label>
-            <input type="text" id="name" name="name" required>
-            <label for="email">Email</label>
-            <input type="email" id="email" name="email" required>
-            <label for="zip">ZIP Code</label>
-            <input type="text" id="zip" name="zip" required>
-            <button type="submit">Get Started</button>
-        </form>
-        <p id="success-message" class="hidden">Thank you! We will contact you soon.</p>
+    <section id="enroll" class="enroll-section py-5">
+        <div class="container">
+            <h2 class="text-center mb-4">Enrollment Form</h2>
+            <form id="enroll-form" class="mx-auto" style="max-width:400px;">
+                <div class="mb-3">
+                    <label for="name" class="form-label">Name</label>
+                    <input type="text" id="name" name="name" class="form-control" required>
+                </div>
+                <div class="mb-3">
+                    <label for="email" class="form-label">Email</label>
+                    <input type="email" id="email" name="email" class="form-control" required>
+                </div>
+                <div class="mb-3">
+                    <label for="zip" class="form-label">ZIP Code</label>
+                    <input type="text" id="zip" name="zip" class="form-control" required>
+                </div>
+                <button type="submit" class="btn btn-primary w-100">Get Started</button>
+            </form>
+            <p id="success-message" class="text-center text-success mt-3 d-none">Thank you! We will contact you soon.</p>
+        </div>
     </section>
 
-    <footer>
-        <p>&copy; 2025 Affordable Care Enrollment. This is a demo site.</p>
+    <footer class="bg-dark text-white text-center py-3">
+        <div class="container">
+            <p class="mb-0">&copy; 2025 Affordable Care Enrollment. This is a demo site.</p>
+        </div>
     </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
     <script src="script.js"></script>
 </body>
 </html>
