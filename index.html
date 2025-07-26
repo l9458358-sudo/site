@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Affordable Care Enrollment</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="hero">
+        <h1>Affordable Care Enrollment</h1>
+        <p>Your health coverage starts here.</p>
+        <a href="#enroll" class="cta-btn">Enroll Now</a>
+    </header>
+
+    <section class="features">
+        <h2>Why Choose Us?</h2>
+        <div class="feature-list">
+            <div class="feature">
+                <h3>Comprehensive Plans</h3>
+                <p>We offer a range of plans to fit your needs and budget.</p>
+            </div>
+            <div class="feature">
+                <h3>Trusted Providers</h3>
+                <p>Access a nationwide network of healthcare professionals.</p>
+            </div>
+            <div class="feature">
+                <h3>Simple Enrollment</h3>
+                <p>Our quick application process gets you covered fast.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="enroll" class="enroll-section">
+        <h2>Enrollment Form</h2>
+        <form id="enroll-form">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" required>
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required>
+            <label for="zip">ZIP Code</label>
+            <input type="text" id="zip" name="zip" required>
+            <button type="submit">Get Started</button>
+        </form>
+        <p id="success-message" class="hidden">Thank you! We will contact you soon.</p>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Affordable Care Enrollment. This is a demo site.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
